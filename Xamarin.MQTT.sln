@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.MQTT", "Xamarin.MQTT\Xamarin.MQTT.csproj", "{B5E08F25-0CEC-4C33-B441-7889C076AA7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5E08F25-0CEC-4C33-B441-7889C076AA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E08F25-0CEC-4C33-B441-7889C076AA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E08F25-0CEC-4C33-B441-7889C076AA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E08F25-0CEC-4C33-B441-7889C076AA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C7267E3-DF0B-462D-82D3-BF6265725DE5}
+	EndGlobalSection
+EndGlobal
