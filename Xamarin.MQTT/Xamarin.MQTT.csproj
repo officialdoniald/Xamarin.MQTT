@@ -17,4 +17,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MQTTnet" Version="3.0.13" />
+  </ItemGroup>
+
 </Project>
