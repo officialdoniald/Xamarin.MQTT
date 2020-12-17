@@ -1,5 +1,7 @@
 # Xamarin.MQTT
 
+NuGet Package: https://www.nuget.org/packages/Xamarin.MQTT/
+
 Usage: 
 
 1. I created two contructors of the MQTTConnection class. You can init this object with a specific MqttClientOptions and a string array of your topics, or with username, passowrd, a string array of your topics, servername, port and clientid.
