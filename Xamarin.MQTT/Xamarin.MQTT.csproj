@@ -8,6 +8,9 @@
     <Authors>Bence Lénárt</Authors>
     <Company>officialdoniald</Company>
     <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/officialdoniald/Xamarin.MQTT</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/officialdoniald/Xamarin.MQTT</PackageProjectUrl>
+    <PackageTags>xamairn, forms, mqtt</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
