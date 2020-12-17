@@ -15,6 +15,9 @@ await App.MqttConnection.CreateMQTTConnection();
 3. You can subscribe to the MQTTConnection events:
 
   MqttConnection.OnConnected += MqttConnection_OnConnected;
+  
   MqttConnection.OnDisconnected += MqttConnection_OnDisconnected;
+  
   MqttConnection.OnErrorAtSending += MqttConnection_OnErrorAtSending;
+  
   MqttConnection.OnMessageReceived += MqttConnection_OnMessageReceived;
