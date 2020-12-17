@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using MQTTnet;
+using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace Xamarin.MQTT.Example
@@ -32,6 +34,31 @@ namespace Xamarin.MQTT.Example
             App.MqttConnection = new MqttConnection(ServerName, Port, ClientID, Username, Password, TopicList);
             
             await App.MqttConnection.CreateMQTTConnection();
+
+            MqttConnection.OnConnected += MqttConnection_OnConnected;
+            MqttConnection.OnDisconnected += MqttConnection_OnDisconnected;
+            MqttConnection.OnErrorAtSending += MqttConnection_OnErrorAtSending;
+            MqttConnection.OnMessageReceived += MqttConnection_OnMessageReceived;
+        }
+
+        private void MqttConnection_OnMessageReceived(object sender, object e)
+        {
+            Console.WriteLine("MQTT received a message:" + ((MqttApplicationMessageReceivedEventArgs)e).ApplicationMessage.ToString()); //ApplicationMessage.Topic, ApplicationMessage.Payload, ...
+        }
+
+        private void MqttConnection_OnErrorAtSending(object sender, object e)
+        {
+            Console.WriteLine("MQTT trow exception while sending: " + ((Exception)e).StackTrace);
+        }
+
+        private void MqttConnection_OnDisconnected(object sender, object e)
+        {
+            Console.WriteLine("MQTT Disconnected.");
+        }
+
+        private void MqttConnection_OnConnected(object sender, object e)
+        {
+            Console.WriteLine("MQTT Connected.");
         }
 
         protected override void OnSleep() { }
